@@ -1,0 +1,307 @@
+/* === PREDEFINIÇÕES === */
+html { 
+    font-size: calc(1em + 1vw); 
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/* NAVBAR E HEADER */
+header{
+    background:url(../img/fundo-banner.jpg) no-repeat center center; 
+    color: white;
+    padding: 3vw 6vw 0vw 6vw;
+}
+header div.navbar h1{
+    display: flex;
+    font-weight: bold;
+}
+header div.navbar span{
+    position: relative;
+    top: -0.8vw;
+    font-weight: 600;
+    font-size: .5em;
+}
+header div.navbar h1 p{
+    color: #dca212;
+}
+header div.navbar, header nav ul{
+    display: flex;
+    justify-content: space-between;
+}
+header div.logo{
+    display: block;
+    width: 15vw;
+}
+
+
+nav{
+    position: absolute;
+    right: 8vw;
+    width: 40vw;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: .6em;
+    font-weight: 900;
+}
+nav ul li:first-child a{
+    color: black;
+    background: #ffc61c;
+    padding: 0.3vw 1vw;
+    border-radius: 20px;
+}
+
+/* HEADER CONTENT */
+div.content{
+    padding: 3vw 6vw 1vw 6vw;
+    text-align: center;
+    font-weight: bold;
+}
+div.content h2{
+    color: #ffc61c;
+    letter-spacing: 2px;
+}
+div.content h1{
+    font-size: 2em;
+    letter-spacing: 2px;
+}
+div.content h3{
+    font-size: 0.6em;
+    text-transform: uppercase;
+    margin-top: 1vw;
+    letter-spacing: 13px;
+}
+div.content img{
+    margin-top: 3vw;
+    width: 50%;
+}
+
+/* SECTION BOOK */
+
+section.book{
+    background: #ffc61c;
+    display: flex;
+    padding: 8vw 10vw 5vw 10vw;
+}
+div.description{
+    width: 60vw;
+    margin-right: 10vw;
+}
+div.description h2{
+    font-weight: bold;
+    font-size: 1.2em;
+}
+div.description h1{
+    padding-top: 1vw;
+    font-weight: 900;
+    font-size: 1.5em;
+}
+div.description p{
+    padding-top: 3vw;
+    font-size: 0.5em;
+    line-height: 1.2em;
+    margin-bottom: 3vw;
+}
+div.description a{
+    color: white;
+    text-decoration: none;
+    font-size: .6em;
+    letter-spacing: -1px;
+    word-spacing: -2px;
+    font-weight: 900;
+    background: black;
+    padding: 0.8vw 2vw;
+    border-radius: 10px;
+}
+
+
+div.form{
+    width: 35vw;
+}
+div.form legend{
+    background: #171717;
+    display: flex;
+    color: white;
+    padding: 1vw;
+    font-weight: 900;
+}
+div.form legend p{
+    margin-left: 6px;
+    color: #e8b717;
+}
+div.input{
+    background: white;
+    text-align: center;
+    padding: 1vw 0vw;
+}
+div.input input{
+    width: 40%;
+    border: none;
+    border-bottom: 2px solid #d1d1d1;
+    font-weight: 700;
+    font-size: 0.6em;
+    color: gray;
+    padding-bottom: .3vw;
+    margin-bottom: 2vw;
+}
+div.input input:nth-child(2n+1){
+    color: rgb(42, 42, 42);
+    margin-right: 2%;
+}
+div.input input:nth-child(7){
+    width: 85%;
+}
+div.input button{
+    background: black;
+    color: white;
+    font-size: .6em;
+    font-weight: 900;
+    text-transform: uppercase;
+    padding: .5vw 9vw;
+    border-radius: 10px;
+}
+
+/* Download section */
+
+section.download{
+    padding: 7vw 18vw 0vw 18vw;
+}
+section.download h2{
+    color: #dca212;
+    text-align: center;
+    font-weight: 900;
+    font-size: 1.1em;
+}
+section.download h1{
+    font-weight: 900;
+    font-size: 1.3em;
+    text-align: center;
+    margin-top: 1vw;
+}
+div.description_download{
+    display: flex;
+}
+div.description_download>div{
+    width: 60%;
+    padding: 5vw 3vw;
+}
+div.description_download>div h3{
+    font-weight: 900;
+    font-size: .7em;
+    margin-bottom: .5vw;
+}
+div.description_download>div p{
+    font-size: .55em;
+    width: 70%;
+    margin-top: 2vw;
+}
+div.description_download img.celular{
+    width: 35%;
+    height: 35%;
+    margin-top: 2vw;
+}
+div.plataform{
+    display: flex;
+    margin-top: 4vw;
+}
+div.plataform img{
+    width: 8vw;
+    background: #000000;
+    padding: 0.8vw 2vw;
+    border-radius: 30px;
+    margin-left: 1vw;
+}
+
+/* SECTION CALL */
+
+section.call{
+    padding: 4vw 18vw 5vw 18vw;
+    background: #ffc61c;
+    text-align: center;
+}
+section.call h2{
+    font-weight: 900;
+}
+section.call h1{
+    margin-top: 1.5vw;
+    font-weight: 900;
+    font-size: 2em;
+}
+
+/* FOOTER SECTION */
+
+footer{
+    background:url(../img/fundo-banner2.jpg) no-repeat;
+    color: white;
+    padding: 5vw 10vw 0vw 10vw;
+    display: flex;
+}
+footer div.footer_section{
+    width: 30%;
+}
+footer div.footer_section:nth-child(2){
+    margin: 0% 5%;
+}
+footer div.footer_section h2{
+    font-weight: 900;
+    font-size: .7em;
+    margin-bottom: 2vw;
+}
+footer div.footer_section hr{
+    border: #ffc61c 4px solid;   
+}
+footer div.footer_section p{
+    font-size: .5em;
+}
+footer div.footer_section>p{
+    padding: 2vw 0vw;
+}
+
+/* FOOTER 1 */
+
+footer div.footer_section ul{
+    display: flex;
+}
+footer div.footer_section ul li{
+    margin: 0vw 0.5vw;
+}
+
+/* FOOTER 2 */
+
+footer div.footer_section table tr td a{
+    color: #ffc61c;
+    font-size: .6em;
+    text-decoration: none;
+}
+footer div.footer_section table tr td:nth-child(2n){
+    padding-left: 2vw;
+    position: relative;
+    top: 8px;
+}
+
+/* FOOTER 3 */
+
+footer div.footer_section div.lines{
+    padding: 2vw 0vw;    
+}
+footer div.footer_section div.line{
+    display: flex;
+    padding-bottom: 1.5vw;
+}
+footer div.footer_section div.line img{
+    margin-right: 2vw;
+}
+footer div.footer_section div.line p{
+    width: 60%;
+    font-size: .5em;
+}
+
+/* Copyright */
+
+div.copy{
+    text-align: center;
+    color: white;
+    background: black;
+    font-size: .4em;
+    padding: 1.2vw 0vw;
+}

@@ -1,0 +1,13 @@
+package Lista;
+
+import java.util.ArrayList;
+import java.util.Date;
+
+public class Contato {
+	private String nome;
+	private String sobrenome;
+	private Date dataNascimento;
+	//Date date = formatter.parse("19/07/2020");
+	//private ArrayList<Telefone> telefones;
+	private ArrayList<Email> emails;
+}

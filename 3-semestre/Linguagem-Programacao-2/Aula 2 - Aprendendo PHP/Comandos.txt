@@ -1,0 +1,7 @@
+php --v
+ver a versão
+
+php -S localhost:<porta>
+Abre um servidor local
+
+// ir em php.ini e habilitar phpmysqli

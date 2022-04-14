@@ -1,0 +1,4 @@
+Aula 06 - DQL Parte III - Correção
+Questões revisão
+FUNÇÃO DATADIFF()
+FUNÇÃO TIMESTAMPDIFF()

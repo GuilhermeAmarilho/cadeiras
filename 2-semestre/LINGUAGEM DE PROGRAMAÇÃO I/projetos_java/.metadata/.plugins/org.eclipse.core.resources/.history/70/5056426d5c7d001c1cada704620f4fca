@@ -1,0 +1,7 @@
+package Lista;
+
+public class Email {
+	private String email;
+	private String rotulo;
+	
+}

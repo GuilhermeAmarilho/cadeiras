@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+form>h2{
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 50%;
+    padding: 1.5vw 0 0.5vw 0;
+    margin-left: 25%;
+    margin-top: 5vw;
+    min-height: 3vw;
+    text-align: center;
+}
+div.buttons {
+    align-items: center;
+    display: flex;
+    width: 50%;
+    margin-left: 25%;
+    border: 1px solid black;
+}
+div.buttons div.numeros{
+    display: flex;
+    margin-left: 5%;
+    flex-wrap: wrap;
+    width: 60%;
+}
+div.buttons div.operadores{
+    display: flex;
+    flex-wrap: wrap;
+    width: 40%;
+    justify-content: space-around;
+}
+div.buttons div.numeros p, div.buttons div.operadores p, div.buttons div.operadores button{
+    background: rgb(212, 189, 189);
+    padding: 2vw 2.5vw;
+    margin: 1vw;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-size: 1.2em;
+    font-weight: 900;
+}
+div.buttons div.operadores p:nth-child(5), div.buttons div.operadores p#enviar{
+    padding: 2vw .6vw;
+}
+div.buttons div.numeros .first, div.buttons div.numeros .second, div.buttons div.operadores .opselected{
+    background: rgb(202, 200, 66);
+}

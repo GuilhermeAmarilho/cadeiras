@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+*{
+  font-family: 'Lato', sans-serif;
+  color: #374b5c;
+}
+header{
+  background: #f1fefe;
+}
+div.banner{
+  background: linear-gradient(#f1fefe, white) no-repeat;
+}
+
+body a{
+  text-decoration:none;
+}
+h2.title{
+  font-size: 2vw;
+  padding: 1vw 1vw 1vw 1vw;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+p.title{
+  font-size: 1em;
+  width: 56%;
+  padding-top: 2vw;
+  padding-bottom: 7vw;
+  margin-left: 22%;
+}
+main section{
+  text-align: center;
+}
+main section ul{
+  display: flex;
+}
+
+
+/* header */
+header{
+  padding: 0.5vw 0vw 0vw 10vw;
+  text-align: center;
+}
+header div{
+  display: flex;
+  justify-content: space-between;
+}
+header div nav ul{
+  display: flex;
+}
+  header div nav ul li{
+  font-size: 1em;
+  padding: 2vw 2vw;
+}
+
+/* banner */
+
+section.banner{
+  padding: 12vw 10vw;
+  background: url("../img/Grupo249.png") no-repeat top right;
+  background-size: 60%;
+}
+section.banner h3{
+  font-size: 2.4em;
+  padding-bottom: 1vw;
+}
+section.banner h2{
+  font-size: 3.5em;
+  font-weight: bold;
+  padding-bottom: 3vw;
+}
+section.banner p{
+  font-size: 1.25em;
+  width: 38%;    
+  line-height: 130%;
+}
+section.banner p a{
+  padding: 1.2vw 4vw;
+  border-radius: 8px;
+  background: #00dbd0;
+  color: white;
+}
+section.banner p:last-child{
+  padding-top: 3vw;
+}
+
+  
+/* nature */
+main section.nature{
+  padding: 12vw 10vw 10vw 10vw;
+}
+main section.nature li img{
+  width: 30%;
+}
+main section.nature ul li{
+  border: 2px dashed #e1e4e7;
+  padding: 3vw 0vw 3vw 0vw;
+  border-radius: 20px;
+  width: 20%;
+  margin: 0% 2.5% 0% 2.5%;
+  /* padding: 1vw 10vw 1vw 1vw; */
+}
+main section.nature ul li h3{
+  margin: 3vw 0vw 2vw 0vw;
+  font-weight: bold;
+  font-size: 1.1em;
+  word-spacing: 1vw;
+}
+main section.nature ul li p{
+  width: 70%;
+  margin-left: 15%;
+  font-size: 0.8em;
+}
+
+/* by */
+
+main section.by{
+  padding: 0vw 10vw 10vw 10vw;
+}
+main section.by ul li{
+  width: 16%;
+  margin: 0% 2% 0% 2%;
+}
+
+/* blog */
+
+main section.blog{
+  padding: 3vw 10vw 10vw 3vw;
+}
+main section.blog ul li{
+  width: 25%;
+  margin: 0% 1% 0% 1%;
+  /* padding: 1vw 10vw 1vw 1vw; */
+}
+main section.blog ul li:first-child{
+  margin-left: 10.5%;
+}
+main section.blog ul li h3{
+  margin: 2vw 0vw 1vw 0vw;
+  font-weight: bold;
+  font-size: 1.1em;
+  color: #57e7e0;
+}
+main section.blog ul li>p{
+  width: 60%;
+  margin-left: 20%;
+  font-size: 0.8em;
+  margin-bottom: 1vw;
+}
+
+/* FOOTER */
+
+footer{
+  background: #374B5C;
+}
+footer img{
+  width: 31px;
+}
+footer li.first img{
+  width: 174px;
+}
+footer li, footer p, footer h4{
+  color:white;
+}
+footer hr{
+  background: #00DBD0;
+  height: 0.02vw;
+  width: 73px;
+  margin-bottom: 1vw;
+  margin-left: 0px;
+}
+ul.principal{
+  display: flex;
+  padding-top: 8vw;
+  width: 100%;
+}
+li.first div{
+  margin-left: 9vw;
+}
+li.first img{
+  padding-bottom: 2vw;
+}
+li.first p{
+  font-size: 0.9em;
+  width: 70%;
+  padding-bottom: 1.5vw;
+}
+li.first p:last-child{
+  font-weight: bold;
+}
+
+/* meio */
+
+h4{
+  font-weight: bold;
+  padding-bottom: 0.2vw;
+}
+ul.primary{
+  display: flex;
+  width: 100%;
+}
+ul.primary li:first-child{
+  padding-top: 0.2vw;
+}
+ul.primary li{
+  font-size: 0.9em;
+  padding-bottom: 2vw;
+}
+li.secundary{
+  margin-left: 5vw;
+}
+
+/* Ultimo */
+
+li.last{
+  margin-left: 15vw;
+}
+ul.social{
+  display: flex;
+}
+ul.social li{
+  margin-right: 2vw;
+}

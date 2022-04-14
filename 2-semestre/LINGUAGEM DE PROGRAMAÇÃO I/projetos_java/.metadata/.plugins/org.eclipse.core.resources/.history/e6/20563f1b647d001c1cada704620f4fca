@@ -1,0 +1,35 @@
+package Lista;
+
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.Map.Entry;
+
+import aula16.Item;
+import lanhouse.Computador;
+
+public class Contato {
+	private String nome;
+	private String sobrenome;
+	private Date dataNascimento;
+	//Date date = formatter.parse("19/07/2020");
+	private ArrayList<Telefone> telefones;
+	private ArrayList<Email> emails;
+	public String getNome() {
+		return nome;
+	}
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
+	public String getSobrenome() {
+		return sobrenome;
+	}
+	public void setSobrenome(String sobrenome) {
+		this.sobrenome = sobrenome;
+	}
+	public Date getDataNascimento() {
+		return dataNascimento;
+	}
+	public void setDataNascimento(Date dataNascimento) {
+		this.dataNascimento = dataNascimento;
+	}
+}

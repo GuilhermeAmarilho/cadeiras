@@ -1,0 +1,27 @@
+package Filmes;
+
+public class Bombonier {
+	public static void main() {
+		Cinema c = new Cinema();
+
+		Sala s = new Sala(1,2);
+		Sala s2 = new Sala(3,8);
+		Sala s3 = new Sala(5,32);
+
+		Filmes f1 = new Filmes("Filme1", "Genero1", 2021, "Diretor1", s);
+		Filmes f2 = new Filmes("Filme2", "Genero2", 2021, "Diretor2", s2);
+		Filmes f3 = new Filmes("Filme3", "Genero3", 2021, "Diretor3", s3);
+		
+		c.inserirSala(1, 2);
+		c.inserirSala(2, 4);
+		c.inserirSala(3, 8);
+		c.inserirSala(4, 16);
+		c.inserirSala(5, 32);
+		
+		c.inserirFilme("Filme1", "Genero1", 2021, "Diretor1", s);
+		c.inserirFilme("Filme2", "Genero2", 2021, "Diretor2", s2);
+		c.inserirFilme("Filme3", "Genero3", 2021, "Diretor3", s3);
+		
+		
+	}	
+}

@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+/* Header section */
+
+header{
+    padding: 3vw 9vw 0vw 9vw;
+}
+a{
+    text-decoration: none;
+}
+header div.navbar{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 7vw;
+}
+header div.navbar div.logo img{
+    width: 130%;
+}
+header div.navbar nav{
+    width: 70%;
+    display : flex;
+    align-items : center;
+    justify-content: flex-end;
+    margin-right: 2vw;
+}
+header div.navbar nav ul{
+    display: flex;
+    justify-content: space-around;
+}
+header div.navbar nav ul li{
+    padding: 0vw 1vw;
+}
+header div.navbar nav ul li a{
+    color: #B8BECD;
+    font-size: 1.2em;
+    font-weight: 600;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+header div.navbar nav ul li:first-child a{
+    color: #202336;
+}
+header div.navbar nav ul li:nth-child(5) a{
+    color: #FB8F1D;
+    border: 1px solid #FB8F1D;
+    padding: .7vw 2vw;
+    border-radius: 12px;
+}
+header div.navbar nav ul li:nth-child(6) a{
+    color: white;
+    background: #FB8F1D;
+    padding: .7vw 2vw;
+    border-radius: 12px;
+}
+
+header div.content{
+    display: flex;
+    justify-content: space-between;
+}
+header div.content h1{
+    font-size: 5em;
+    font-family: 'Playfair Display', serif;
+    width: 80%;    
+    line-height: normal;
+    margin-bottom: 4vw;
+}
+header div.content h2{
+    font-size: 1.7em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 800;
+    border-bottom: 3px solid black;
+    padding-bottom: 1.2vw;
+    display:inline-block;
+    margin-bottom: 4vw;
+}
+header div.content p a{
+    font-size: 1.3em;
+    font-weight: 600;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+    background: #FB8F1D;
+    padding: .8vw 4vw;
+    border-radius: 12px;
+}
+header div.content img{
+    width: 125%;
+    position: relative;
+    top: -2vw;
+    left: -4vw;
+}
+
+
+/* Trending section */
+
+section.trending{
+    padding: 13vw 13vw 0vw 13vw;
+}
+section.trending div.trending_header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+}
+section.trending div.trending_header h1{
+    font-size: 3em;
+    font-weight: 800;
+}
+section.trending div.trending_header p a{
+    color: #FB8F1D;
+    font-size: 1.3em;
+    font-weight: 800;
+    font-family: 'Inter', sans-serif;
+}
+section.trending div.trending_body{
+    display: flex;
+    margin-top: 4vw;
+    justify-content: space-around;
+}
+section.trending div.trending_body div.trending_content{
+    font-family: 'Inter', sans-serif;
+    width: 23%;
+}
+section.trending div.trending_body div.trending_content img{
+    border-radius: 10px;
+    width: 100%;
+}
+section.trending div.trending_body div.trending_content h1{
+    margin: 1vw 0vw;
+    font-weight: 900;
+    font-size: 1.6em;  
+    line-height: 1.4em;  
+    font-weight: 800;
+}
+section.trending div.trending_body div.trending_content span{
+    color: #B8BECD;
+    font-size: 1.3em;
+    line-height: 1.8em;  
+    font-weight: 600;
+}
+section.trending div.trending_body div.trending_content p{
+    margin-top: 2vw;
+}
+section.trending div.trending_body div.trending_content p a{
+    color: #FB8F1D;
+    font-size: 1.3em;
+    font-weight: 800;
+}
+
+/* Explore section */
+
+section.explore{
+    padding: 13vw 13vw 0vw 7vw;
+    display: flex;
+    justify-content: space-between;
+}
+section.explore div.img{
+    width: 75%;
+}
+section.explore div.img img{
+    width: 85%;
+}
+section.explore div.content{
+    width: 40%;
+    margin-top: 6vw;
+}
+section.explore div.content h1{
+    font-size: 3.3em;
+    font-weight: 800;
+    line-height: 1.2em;
+    margin-bottom: 2vw;
+}
+section.explore div.content p{
+    color: #B8BECD;
+    font-size: 1.5em;
+    text-align: justify;
+    line-height: 1.4em;
+    margin-bottom: 3vw;
+}
+section.explore div.content p a{
+    color: white;
+    background: #FB8F1D;
+    padding: .8vw 2.5vw;
+    border-radius: 12px;    
+    font-family: 'Inter', sans-serif;
+}
+
+/* Testimonial section */
+
+section.testimonials{
+    padding: 13vw 13vw 0vw 16vw;
+    display: flex;
+    justify-content: space-between;
+}
+section.testimonials div.content{
+    width: 45%;
+}
+section.testimonials div.content>h1{
+    font-size: 3.4em;
+    font-weight: 800;
+}
+section.testimonials div.content div.star img{
+    margin-top: 8vw;
+    width: 2vw;
+    padding: 0vw 0.2vw;
+}
+section.testimonials div.content>p{
+    margin-top: 1.8vw;
+    font-size: 2em;    
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    line-height: 1.4em;
+}
+section.testimonials div.content div.people{
+    font-family: 'Inter', sans-serif;
+}
+section.testimonials div.content div.people h1{
+    margin-top: 2.5vw;
+    font-size: 2em;
+    font-weight: 800;
+}
+section.testimonials div.content div.people p{
+    margin-top: 1vw;
+    font-size: 1.4em;
+    font-weight: 600;
+}
+section.testimonials div.img img{
+    position: relative;
+    width: 120%;
+    left: -7vw;
+    top: 5vw;
+}
+
+/* Footer section */
+footer{
+    margin-top: 13vw;
+    padding: 6vw 11vw;
+    background: #F9F9FB;
+    font-family: 'Inter', sans-serif;
+}
+footer div.footer{
+    display: flex;
+    padding-bottom: 6vw;
+    border-bottom: 1px solid #929292;
+    justify-content: space-between ;
+}
+footer div.footer div.content{
+    width: 30%;
+}
+footer div.footer div.content img{
+    width: 3vw;
+}
+footer div.footer p{
+    font-size: 1.5em;
+    color: #B8BECD;
+}
+footer div.footer div.content p{
+    padding-top: 2vw;
+    line-height: 1.6em;
+}
+footer div.footer div.content p:last-child{
+    margin-top: 1vw;
+}
+footer div.footer div.destinations h1, footer div.footer div.shop h1, footer div.footer div.interests h1{
+    font-size: 1.5em;
+    font-weight: 800;
+    padding-bottom: 1vw;
+}
+footer div.footer div.shop p, footer div.footer div.interests p{
+    padding-top: 1vw;
+}
+footer div.footer div.destinations p{
+    padding-top: 2vw;
+}
+
+footer div.social{
+    padding: 2w;
+}

@@ -1,0 +1,15 @@
+Prof. Fabricio Bizotto
+fabricio.bizotto@ifc.edu.br
+---
+
+Linguagem de Programação II
+
+ - conceitos de programação Web
+ - PHP
+
+Sugestões/Recomendações
+ - php (php.net)
+ - mingw (command line)
+ - git/github (controle de versão)
+ - conhecer alguns comandos básicos LINUX
+ - editor de texto (vscode)

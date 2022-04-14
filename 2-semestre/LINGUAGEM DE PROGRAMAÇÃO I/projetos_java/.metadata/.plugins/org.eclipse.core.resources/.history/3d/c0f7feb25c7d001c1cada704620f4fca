@@ -1,0 +1,21 @@
+package Lista;
+
+public class Email {
+	private String email;
+	private String rotulo;
+	public String getEmail() {
+		return email;
+	}
+	public void setEmail(String email) {
+		this.email = email;
+	}
+	public String getRotulo() {
+		return rotulo;
+	}
+	public void setRotulo(String rotulo) {
+		this.rotulo = rotulo;
+	}
+	public boolean validarEmail(String email) {
+		
+	}
+}

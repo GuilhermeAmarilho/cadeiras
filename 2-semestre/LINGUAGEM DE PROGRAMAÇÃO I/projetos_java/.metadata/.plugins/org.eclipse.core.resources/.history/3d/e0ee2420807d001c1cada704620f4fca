@@ -1,0 +1,12 @@
+package Lista;
+import java.util.ArrayList;
+public class Agenda {
+	private ArrayList<Contato> contatos;
+	public void adicionarContato(Contato contato) {
+		if(!this.contatos.contains(contato)) {
+			this.contatos.add(contato);
+			System.out.println("Contato adicionado!");
+		}else
+			System.out.println("Contato já cadastrado!");
+	}
+}

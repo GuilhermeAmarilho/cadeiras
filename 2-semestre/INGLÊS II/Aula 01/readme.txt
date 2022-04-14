@@ -1,0 +1,1 @@
+Atividades de recepção dos alunos no campus com a coordenação de curso

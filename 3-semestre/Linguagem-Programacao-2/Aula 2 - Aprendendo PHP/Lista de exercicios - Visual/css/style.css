@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{    
+    --body-color: linear-gradient(90deg, hsl(0, 100%, 30%) -20%, hsl(240, 100%, 20%) 120%);
+    --container-color: linear-gradient(90deg, hsl(0, 100%, 15%) -20%, hsl(240, 100%, 10%) 120%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Rubik', sans-serif;
+    color: white;
+}
+body{
+    background: var(--body-color);
+}
+header{
+    background: var(--container-color);
+    display: flex;
+    padding: 1vw 8vw;
+    justify-content: space-between;
+    align-items: center;
+}
+header div.logo{
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-size: 1.3em;
+}
+header div.logo a{
+    text-decoration: none;
+}
+header div.logo img{
+    width: 30%;
+    margin-right: 2vw;
+}
+header nav ul{
+    display: flex;
+}
+header nav ul li{
+    list-style: none;    
+    padding: 0vw 1vw;
+    font-weight: 700;
+}
+header nav ul li a{
+    text-decoration: none;
+}
+
+/* Home */
+
+div.home{
+    width: 60%;
+    margin-left: 20%;
+    text-align: center;
+    margin-top: 6vw;
+}
+div.home h1{
+    font-size: 3em;
+}
+div.home p{
+    font-size: 1.2em;
+    margin-top: 1vw;
+}
+
+/* Combustivel */
+
+form{
+    width: 50%;
+    text-align: center;
+    margin-left: 25%;
+    flex-direction: column;
+    margin-top: 3vw;
+}
+form h1{
+    margin-bottom: 2vw;
+}
+form label{
+    font-size: 1.3em;
+}
+form input{
+    width: 50%;
+    height: 1.6em;
+    color: black;
+    font-weight: 700;
+    font-size: 1.2em;
+    margin: 1vw 25%;
+}
+form button{
+    color: black;
+    font-size: 1.3em;
+    font-weight: 700;
+    margin-top: 1vw;
+    padding: .5vw 4vw;
+    border-radius: 10px;
+}

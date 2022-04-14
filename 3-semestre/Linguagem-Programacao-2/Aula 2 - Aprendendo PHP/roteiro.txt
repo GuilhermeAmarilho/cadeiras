@@ -1,0 +1,34 @@
+Linguagem de Programação II
+
+AULA 02
+
+ - vscode (extensão: PHP intelephense)
+ - configurar o PHP no path
+
+Introdução ao PHP
+
+ - Documentação (http://php.net, https://www.w3schools.com/php/default.asp)
+ - Declaração de variáveis (string, int, real, array/vetor, hash)
+ - Operadores (+, -, *, /, %)
+ - Concatenação, comentários
+ - Imprimindo (echo, var_dump, print_r)
+ - CamelCase, snake_case
+ - CONSTANTE
+ - Operadores de controle (if, if ternário, switch)
+ - Operadores de repetição (while, for, foreach)
+ - funções
+ - POO
+
+Exemplo
+1. Calcule se vale a pena abastecer com álcool ou com gasolina.
+
+Regras:
+
+1. Divida o desempenho do etanol pelo desempenho da gasolina (se seu carro faz 7,3 km/litro com etanol e 10 km/l com gasolina, você deve dividir 7,3 por 10, que é igual a 0,73 ou 73%. Pronto, você achou o rendimento do carro com etanol).
+2. Faça agora o cálculo da relação do preço etanol/gasolina na bomba: divida o valor do etanol pelo do da gasolina (exemplo: se o litro do etanol custou R$ 2,74 e o da gasolina R$ 4,64, a relação, então, é de 0,59 ou 59%).
+3. A relação de preço acima (59%) dá uma enorme economia ao consumidor que optar por abastecer seu veículo com etanol. Se este cálculo resultar em 73%, por exemplo, o motorista também estará economizando ao optar pelo etanol.
+
+Tarefa
+
+Resolver pelo menos 5 exercícios dessa lista
+ - https://fernandoportugal.com/exercicios_php_resolvidos/

@@ -1,0 +1,39 @@
+package Lista;
+import java.util.ArrayList;
+public class Agenda {
+	private ArrayList<Contato> contatos;
+	public Agenda() {
+		this.contatos = new ArrayList<>();
+	}
+	public void adicionarContato(Contato contato) {
+		if(!this.contatos.contains(contato)) {
+			this.contatos.add(contato);
+			System.out.println("Contato adicionado!");
+		}else
+			System.out.println("Contato já cadastrado!");
+	}
+	public void removerContato(Contato contato) {
+		if(this.contatos.contains(contato)) {
+			this.contatos.remove(contato);		
+			System.out.println("Contato removido!");
+		}else
+			System.out.println("Contato não encontrado!");
+	}
+	public void atualizarContato(Contato contato, int i) {
+		if(this.contatos.contains(contato)) {
+			this.contatos.get(i).setDataNascimento(contato.getDataNascimento());
+			this.contatos.get(i).setNome(contato.getNome());
+			this.contatos.get(i).setSobrenome(contato.getSobrenome());
+			System.out.println("Contato alterado!");
+		}else
+			System.out.println("Contato não encontrado!");
+	}
+	public void listarContatos() {
+		for(Contato c : this.contatos) {
+			System.out.println("Nome: "+c.getNome());
+			System.out.println("Sobrenome: "+c.getSobrenome());
+			System.out.println("Data de nascimento: "+c.getNome());
+		}
+	}
+	
+}

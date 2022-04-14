@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none !important;
+}
+body{
+    font-family: 'Inter', sans-serif !important;
+}
+
+/* Header */
+
+header div{
+    padding: 5vw 7vw 4vw 7vw;
+    display: flex;
+    justify-content: space-between;
+}
+header div nav ul{
+    display: flex;
+}
+header div nav ul li{
+font-size: 1em;
+padding: 2vw 3vw;
+}
+header div nav ul li a{
+    font-weight: 500;
+    color: #6B7280;
+}
+a.contact{
+    color: #3730A3;
+    padding: 1vw 2vw;
+    border: 1px solid #3730A3;
+    border-radius: 10px;
+}
+
+/* MAIN */
+
+/* ABOUT */
+section.sobre{
+
+    padding: 7vw 7vw 4vw 7vw;
+}
+div.sobre{
+    width: 100%;
+    display: flex;
+}
+div.sobre_info{
+    display: flex;
+    color: #4338CA;
+    font-weight: 500;
+}
+div.sobre_info hr{
+    position: relative;
+    height: 0.3px;
+    width: 7vw;
+    background: #4338CA;
+    top: 7px;
+}
+div.sobre_info p{
+    padding-left: 0.5vw;
+}
+div.sobre_dados h1{
+    padding: 3vw 0vw 3vw 1vw;
+    font-weight: 700;
+    font-size: 60px;
+}
+div.sobre_dados p.sobre_descricao{
+    padding: 0vw 0vw 3vw 1vw;
+    font-weight: 400;
+    font-size: 15px;
+    color: #6B7280;
+    width: 70%;
+    line-height: 22px;
+}
+div.sobre_dados>a{
+    margin-left: 1vw;
+    border-radius: 7px;
+    font-size: 15px;
+    font-weight: 500;
+}
+a.hire{
+    color: white;
+    padding: 1vw 2.2vw;
+    background: #3730A3;
+}
+a.read{
+    border: 2px solid #3730A3;
+    padding: 0.8vw 2vw;
+}
+div.sobre_dados>hr{
+    position: relative;
+    height: 1px;
+    width: 75%;
+    background: #eaecf1;
+    top: 2.5vw;
+    border: none;
+}
+p.footer{
+    margin-top: 3.5vw;
+    padding-left: 1vw;
+    font-size: 10px;
+    color: #6B7280;
+}
+div.sobre img{
+    position: relative;
+    top: -3vw;
+    left: -5vw;
+    width: 420px;
+    height: 420px;
+}
+
+/* Projects */
+
+section.projects{
+    padding: 7vw 9vw;
+}
+section.projects>p{
+    width: 85%;
+    margin-left: 5%;
+    font-weight: 600;
+    font-size: 37px;
+    text-align: center;
+    color: rgb(68, 65, 65);
+}
+section.projects p strong{
+    color: #3730A3;
+}
+section.projects div{
+    display: flex;
+    padding-top: 10vw;
+
+}
+section.projects img{
+    width: 35%;
+}
+section.projects ul{
+    margin: 0vw 4vw;
+}
+section.projects ul li{
+    padding-top: 3.5vw;
+}
+section.projects ul li h3{
+    padding-bottom: 1.5vw;
+    font-weight: 600;
+    font-size: 16px;
+}
+section.projects ul li p{
+    font-size: 12px;
+    color: rgb(68, 65, 65);
+    width: 120%;
+    padding-bottom: 1.5vw;
+}
+section.projects div ul li a{
+    color: #3730A3;
+    font-weight: 500;
+    font-size: 12px;
+}
+
+/* Medias */
+section.social{
+    background: #FEF2F2;
+    width: 100%;
+    padding: 7vw 0vw 4vw 0vw;
+}
+section.social ul{
+    display: flex;
+    padding: 0vw 9vw;
+}
+section.social ul{
+    justify-content: space-between;
+}
+section.social h2{
+    padding-left: 9vw;
+    padding-bottom: 1vw;
+    font-weight: 400;
+    font-size: 16px;
+    color: #9CA3AF;
+}
+section.social img{
+    width: 70%;
+}
+
+/* Planos */
+
+section.planning{
+    padding: 8vw;
+}
+section.planning ul{
+    display: flex;
+}
+section.planning ul li{
+    padding: 0vw 5vw;
+    text-align: center;
+}
+section.planning ul li a{
+    padding: 3vw;
+    border-radius: 10px;
+    font-size: 1.4em;
+    color: #6366F1;
+    background: #EEF2FF;
+}
+section.planning ul li h3{
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 6vw;
+}
+section.planning ul li p{
+    font-weight: 400;
+    color: #9CA3AF;
+    font-size: 12px;
+    margin-top: 1vw;
+    line-height: 18px;
+}
+
+/* Carreira */
+
+section.career{
+    padding: 3vw 10vw;
+    text-align: center;
+}
+section.career h2{
+    color: #1F2937;
+    font-size: 40px;
+    font-weight: 600;
+}
+section.career ul{
+    margin-top: 8vw;
+    width: 100%;
+}
+section.career ul li{
+    display: flex;
+    margin-bottom: 6vw;
+}
+section.career ul li p{
+    width: 33%;
+    font-weight: 500;
+    font-size: 12px;
+    color: #6B7280;
+}
+section.career ul li p strong{
+    font-weight: 900;
+}
+section.career ul li.first p{
+    font-weight: 700;
+}
+section.career ul li p:nth-child(1){
+    text-align: left;
+}
+
+/* FOOTER */
+
+footer{
+    background: #FEF2F2;
+    text-align: center;
+}
+footer h1{
+    color: #374151;
+    font-size: 40px;
+    font-weight: 500;
+    padding-top: 7vw;
+}
+footer p{
+    margin: 2vw 0vw 0vw 25%;
+    font-weight: 400;
+    size: 14px;
+    color: #9CA3AF;
+    width: 50%;
+}
+footer ul{
+    display: flex;
+    width: 36%;
+    padding: 4vw 32%;
+}
+footer ul li{
+    font-size: 1.5em;
+    color: #6B7280;
+    padding: 2vw;
+}

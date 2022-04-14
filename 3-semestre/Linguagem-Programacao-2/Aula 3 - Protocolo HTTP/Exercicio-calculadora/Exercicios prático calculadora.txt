@@ -1,0 +1,10 @@
+Título:	Exercício Prático
+Conteúdo:	
+Utilize o conhecimento prático de PHP e do protocolo HTTP para criar uma calculadora que faça as quatro operações básicas (+, -, *, /).
+
+Entrada: Dois números reais, e uma operação matemática;
+Saída: O resultado da operação matemática.
+
+O resultado deve ser impresso em outra página html. Descreva também a diferença ao utilizar o método GET e POST.
+
+Data Cadastro:	22/03/2022

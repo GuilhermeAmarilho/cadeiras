@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy source folder &apos;src&apos; to &apos;Aula 18 - Associação entre classes&apos;&#x0D;&#x0A;- Original project: &apos;Aula 17 - Associação entre classes&apos;&#x0D;&#x0A;- Destination element: &apos;Aula 18 - Associação entre classes&apos;&#x0D;&#x0A;- Original element: &apos;Aula 17 - Associação entre classes/src&apos;" description="Copy source folder" element1="/src" flags="6" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyRoots" roots="1" stamp="1643058433046" target="/Aula 18 - Associação entre classes" version="1.0"/>
+</session>

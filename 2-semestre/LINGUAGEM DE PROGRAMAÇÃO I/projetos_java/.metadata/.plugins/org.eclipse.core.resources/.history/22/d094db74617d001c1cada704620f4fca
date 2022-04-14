@@ -1,0 +1,7 @@
+package Lista;
+
+public class Telefone {
+	private String numero;
+	private String rotulo;
+	
+}

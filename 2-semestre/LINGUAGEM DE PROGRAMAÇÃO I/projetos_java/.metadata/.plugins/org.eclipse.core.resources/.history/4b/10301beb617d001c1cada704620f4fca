@@ -1,0 +1,9 @@
+package Lista;
+
+public class CadernoDeContatos {
+	public static void main(String[] args) {
+		Email e = new Email("gui@aa.com","email pessoal");
+		Telefone t = new Telefone("+55 53 9 98765-4321", "Numero pessoal");
+		t.getNumero();
+	}
+}

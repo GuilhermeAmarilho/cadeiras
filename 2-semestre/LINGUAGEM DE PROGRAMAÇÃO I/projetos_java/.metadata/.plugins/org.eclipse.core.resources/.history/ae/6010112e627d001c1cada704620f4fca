@@ -1,0 +1,28 @@
+package Lista;
+
+public class Telefone {
+	private String numero;
+	private String rotulo;
+	public Telefone(String numero, String rotulo) {
+		this.numero = numero;
+		this.rotulo = rotulo;
+	}
+	public String getNumero() {
+		return numero;
+	}
+	public void setNumero(String numero) {
+		this.numero = numero;
+	}
+	public String getRotulo() {
+		return rotulo;
+	}
+	public void setRotulo(String rotulo) {
+		this.rotulo = rotulo;
+	}
+	public boolean validarEmail(String numero) {
+		// "+55_49_99999_9999" = 17 letras
+		if(numero.indexOf("+55") != -1 && numero.indexOf("-") != -1 && numero.length() == 17)
+			return true;
+		return false;
+	}
+}

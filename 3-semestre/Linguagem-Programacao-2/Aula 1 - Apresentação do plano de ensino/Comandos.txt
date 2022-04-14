@@ -1,0 +1,11 @@
+php --v
+ver a versão
+
+php -S localhost:<porta>
+Abre um servidor local
+
+php <arquivo>
+
+php.rar vem sem php.ini, alterar o nome php-developer-ini para php.ini que resolve isso
+
+em php.ini, tirar o comentário do phpmysqli
