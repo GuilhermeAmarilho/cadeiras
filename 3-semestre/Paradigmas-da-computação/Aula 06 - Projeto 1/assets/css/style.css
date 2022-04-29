@@ -2,7 +2,9 @@
     margin: 0;
     padding: 0; 
 }
-
+h1.title{
+    text-align: center;
+}
 div.game{
     display: flex;
     justify-content: center;    
@@ -14,21 +16,36 @@ div.game{
     height: 100%;
 }
 .pessoas img{
-    width: 3.5vw;
+    width: 4vw;
     transform: rotate(270deg);
 }
 .quadra{
+    background: url('../img/quadra.png') no-repeat;
     width: 900px;
-    height: 500px;
-    border: 1px solid black;
+    height: 400px;
+    display: flex;
+    flex-direction: column
 }
 .bolin{
     position: relative;
-    width: 20px;
-    height: 20px;
+    width: 15px;
+    height: 15px;
     border-radius: 50%;
-    background: yellow;
-    top: 0%;
-    left: 0%;
-    transition: 1s;
+    background: rgb(255, 255, 255);
+    /* transition: 1s; */
+}
+.bochas{
+    display: flex;
+    flex-direction: column;
+}
+.bocha{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+}
+.time1 .bocha{
+    background:  red;
+}
+.time2 .bocha{
+    background: aqua;
 }
