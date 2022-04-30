@@ -1,0 +1,19 @@
+Atividade referente a Cookies e Sessões
+
+1. O que são cookies e suas características
+2. Por quê e quanto utilizar cookies
+3. O que são sessões e suas características
+4. Por quê e quanto utilizar sessões
+5. Crie um exemplo prático utilizando cookies e sessões para demonstrar o seu funcionamento. O sistema precisa ter um formulário de login com e-mail e senha e utilizar o método HTTP do tipo POST. Ao efetuar o login, o usuário precisa ser redirecionado para uma nova página. Caso o usuário e a senha estejam errados, mostrar uma mensagem de erro ao usuário. O objetivo da tarefa é demonstrar a criação e a destruição de cookies e sessões. Utilize para isso uma linguagem de programação para web.
+
+Observações
+ - Pode ser em dupla.
+ - 2904 e 3004 (sábado letivo) utilizar essas aulas para desenvolvimento da tarefa
+
+Preparar uma apresentação de slides com no máximo 5 slides (incluindo a capa). Apresentar também o sistema desenvolvido. Os slides e o exemplo prático precisam ser entregues nesta tarefa até o dia 0505.
+
+
+ - 0605 Apresentação do trabalho
+
+Período
+Inicia em 29042022 às 00h00 e finaliza em 06052022 às 23h59
