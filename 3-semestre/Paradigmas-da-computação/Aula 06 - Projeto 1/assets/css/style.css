@@ -15,6 +15,7 @@ div.game{
     width: 5vw;
 }
 .pessoas img{
+    position: relative;
     width: 5vw;
     display: block;
 }
