@@ -1,0 +1,40 @@
+# Atividade referente a Cookies e Sessões
+
+## O que são cookies e suas características
+
+#### ` São dados de sites salvos no computador do usuário, como nome do usuário, email, coisas usuais para personalizar e melhorar a experiência no site. Alem de facilitar a transferência de dados de uma página para a outra.`
+
+
+## Por quê e quanto utilizar cookies
+
+#### ` Esta tecnologia começou a ser empregada nos anos 90 para atender a demanda de lojas online, onde o cliente pode sair do site, que ainda assim suas possiveis compras se mantem armazenadas no carrinho.`
+
+## O que são sessões e suas características
+
+`Sessões são uma forma simples de armazenar dados para usuários individuais usando um ID de sessão único. Sessões podem ser usadas para persistir informações entre requisições de páginas. Sessões normalmente se encerram automaticamente quando o PHP termina de executar um script, mas podem ser encerradas manualmente.`
+
+## Por quê e quanto utilizar sessões
+
+` As sessões foram criadas para sanar uma funcionalidade imprescindível, que é a autenticação de usuário, onde essa autenticação garante que cada usuário de nosso sistema só acesse aquilo que lhe é permitido e nada mais, também possibilitando que possamos saber tudo o que foi feito pelo usuário logado dentro de nosso sistema.`
+
+## Crie um exemplo prático utilizando cookies e sessões para demonstrar o seu funcionamento. 
+- O sistema precisa ter um formulário de login com e-mail e senha e utilizar o método HTTP do tipo POST. 
+- Ao efetuar o login, o usuário precisa ser redirecionado para uma nova página. 
+- Caso o usuário e a senha estejam errados, mostrar uma mensagem de erro ao usuário. 
+- O objetivo da tarefa é demonstrar a criação e a destruição de cookies e sessões. 
+- Utilize para isso uma linguagem de programação para web.
+
+### Observações
+ - Pode ser em dupla.
+ - 2904 e 3004 (sábado letivo)
+ - utilizar essas aulas para desenvolvimento da tarefa
+
+### Preparar uma apresentação de slides com no máximo 5 slides (incluindo a capa). 
+### Apresentar também o sistema desenvolvido. 
+### Os slides e o exemplo prático precisam ser entregues nesta tarefa até o dia 0505.
+
+
+ - 0605 Apresentação do trabalho
+
+Período
+Inicia em 29042022 às 00h00 e finaliza em 06052022 às 23h59
