@@ -72,12 +72,13 @@ div.quadra div.arcolinha hr{
     transition: 1s;
 }
 div.bocha{
-    position: relative;
+    position: absolute;
     width: 1.5vw;
     height: 1.5vw;
     border-radius: 50%;
     border: 1px solid black;
-    visibility: hidden;
+    /* visibility: hidden; */
+    transition: 3s;
 }
 div.bochas div.bocha{
     background: #46acc1;
@@ -91,7 +92,7 @@ div.barraforca{
     height: 8vh;
     position: relative;
     left: 30%;
-    top: 18vh;
+    top: 35vh;
     visibility: hidden;
 }
 div.barraforca>div{

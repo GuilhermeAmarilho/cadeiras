@@ -70,7 +70,7 @@ body.addEventListener("keyup", function( e ) {
 
 body.addEventListener("keydown", function( e ) {
     if(barraforca.style.visibility != "visible"){
-        if(arco.style.visibility != "visible"){
+        if(arco.style.visibility != "visible"){ // Movimento do boneco
             if(e.key == "a" || e.key == "A" || e.key == "ArrowLeft"){
                 if(vez%2==0){
                     movimento(1,player1,vez);
@@ -106,7 +106,7 @@ body.addEventListener("keydown", function( e ) {
                     movimento(5,player2,vez);
                 }
             }
-        }else{
+        }else{ // Movimento da angulacao
             if ((e.key == "w" || e.key == "W" || e.key == "ArrowUp") && (angulo > -60)){
                 angulo-=3;
                 linhaarco.style.transform = "rotate("+(angulo)+"deg)";
@@ -124,8 +124,9 @@ body.addEventListener("keydown", function( e ) {
                 arco.style.visibility = "hidden";              
                 linhaarco.style.visibility = "hidden";
             }
+            console.log(angulo);
         }
-    }else{
+    }else{ // Movimento da barra de forca
         if(e.key == "a" || e.key == "A" || e.key == "ArrowLeft"){
             if(valorforca>=0){
                 valorforca--;
@@ -139,21 +140,49 @@ body.addEventListener("keydown", function( e ) {
             }
         }
         if(e.key == "Enter"){
-            lancamento(angulo, valorforca, bocha[vez]);
+            if(vez%2==0){
+                lancamento(angulo, valorforca, bocha[vez], player1);
+            }else{
+                lancamento(angulo, valorforca, bocha[vez], player2);                
+            }
         }
         if(e.key == "Escape"){
             forca.style.width = 0+"%";
             valorforca = 0;
             barraforca.style.visibility = "hidden";
+            bocha[vez].style.visibility = "hidden";
         }
     }
 }); // Evento principal de movimento
- 
-function lancamento(angulo, forca, bocha){
-    console.log("angulo: "+angulo);
-    console.log("forca: "+forca);
+
+
+function lancamento(angulo, forca, bocha, elemento){
+    var hipotenusa = (20*forca)/100;
+    var CatetoOposto = Math.sin(angulo)*hipotenusa;
+    var contador = 0;
+    // while (contador < 100){
+        
+    // }
+    movimentoXBase = (parseFloat(elemento.style.left) - 5);
+    movimentoYBase = (63 + parseFloat(elemento.style.top));
+    movimentoXporVez = hipotenusa/100;
+    movimentoYporVez = CatetoOposto/100;
+
+    bocha.style.top = movimentoYBase +"vh";
+    bocha.style.left = movimentoXBase+"vw";
+    // var i = 0;
+    // while(i < 100){
+    //     if(vez%2==0){
+    //         bocha.style.top = ( movimentoYBase - movimentoYporVez*i ) +"vh";
+    //     }else{
+    //         // bocha.style.top = (70 + parseFloat(elemento.style.top))+"vh";
+    //     }
+    //     bocha.style.left = ( movimentoXBase + movimentoXporVez * i) +"vw";
+    //     i++;
+    // }
     bocha.style.visibility = "visible";
-    console.log("bocha: "+bocha);
+    arco.style.visibility = "hidden";
+    linhaarco.style.visibility = "hidden";
 }
 
 function movimento(tipo, elemento, vez){
@@ -173,6 +202,7 @@ function movimento(tipo, elemento, vez){
             elemento.style.left = parseFloat(elemento.style.left) - 0.4 + "vw";
             arco.style.left = (parseFloat(elemento.style.left) - 6)+"vw";
             linhaarco.style.left = (parseFloat(elemento.style.left) - 6)+"vw";
+            bocha[vez].style.left = (parseFloat(elemento.style.left) - 5)+"vw";
         }
     }
     if(tipo == 2) { // movimento pra cima
@@ -184,12 +214,14 @@ function movimento(tipo, elemento, vez){
                 elemento.style.top = parseFloat(elemento.style.top) - 0.5 + "vh";
                 arco.style.top = (62 + parseFloat(elemento.style.top) - 0.5)+"vh";
                 linhaarco.style.top = (47.5 + parseFloat(elemento.style.top) - 0.5)+"vh";
+                bocha[vez].style.top = (70 + parseFloat(elemento.style.top))+"vh";
             }
         }else{
             if(parseFloat(elemento.style.top) >= -62){
                 elemento.style.top = parseFloat(elemento.style.top) - 0.5 + "vh";
                 arco.style.top = (55 + parseFloat(elemento.style.top) - 0.5)+"vh";
                 linhaarco.style.top = (40.5 + parseFloat(elemento.style.top) - 0.5)+"vh";
+                bocha[vez].style.top = (63 + parseFloat(elemento.style.top))+"vh";
             }
         }
     }
@@ -201,6 +233,7 @@ function movimento(tipo, elemento, vez){
             elemento.style.left = parseFloat(elemento.style.left) + 0.4 + "vw";
             arco.style.left = (parseFloat(elemento.style.left) - 6)+"vw";
             linhaarco.style.left = (parseFloat(elemento.style.left) - 6)+"vw";
+            bocha[vez].style.left = (parseFloat(elemento.style.left) - 5)+"vw";
         }
     }
     if(tipo == 4) { // movimento pra baixo
@@ -211,13 +244,16 @@ function movimento(tipo, elemento, vez){
             if(parseFloat(elemento.style.top) < -14){
                 elemento.style.top = parseFloat(elemento.style.top) + 0.5 + "vh";
                 arco.style.top = (62 + parseFloat(elemento.style.top) + 0.5)+"vh";
-                linhaarco.style.top = (48 + parseFloat(elemento.style.top) - 0.5)+"vh";
+                linhaarco.style.top = (48 + parseFloat(elemento.style.top) - 0.5)+"vh";                
+                bocha[vez].style.top = (70 + parseFloat(elemento.style.top))+"vh";
+
             }
         }else{
             if(parseFloat(elemento.style.top) < -6){
                 arco.style.top = (55 + parseFloat(elemento.style.top) + 0.5)+"vh";
                 elemento.style.top = parseFloat(elemento.style.top) + 0.5 + "vh";
-                linhaarco.style.top = (41 + parseFloat(elemento.style.top) - 0.5)+"vh";
+                linhaarco.style.top = (41 + parseFloat(elemento.style.top) - 0.5)+"vh";   
+                bocha[vez].style.top = (63 + parseFloat(elemento.style.top))+"vh";
             }
         }
     }
