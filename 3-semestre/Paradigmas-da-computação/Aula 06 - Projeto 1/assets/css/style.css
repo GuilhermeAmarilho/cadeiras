@@ -77,8 +77,8 @@ div.bocha{
     height: 1.5vw;
     border-radius: 50%;
     border: 1px solid black;
-    /* visibility: hidden; */
-    transition: 3s;
+    visibility: hidden;
+    transition: 1s;
 }
 div.bochas div.bocha{
     background: #46acc1;
@@ -102,7 +102,7 @@ div.barraforca>div{
 }
 div.forca{
     background: red;
-    width: 100%;
+    width: 50%;
     height: 100%;
 }
 div.barraforca p{
