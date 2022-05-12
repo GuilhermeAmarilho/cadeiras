@@ -14,19 +14,18 @@ div.login{
     display: flex;
     justify-content: center;
     align-items: center;
-    background: var(--bg);
     background-size: 100vw 100vh;
 }
 div.login form{
     position: relative;
     display: flex;
     width: 60%;
-    height: 70vh;
+    height: 80vh;
     color: white;
     text-align: center;
     flex-direction: column;
     align-items: center;
-    border-radius: 15px;
+    border-radius: 35px;
     transition: 1s;
     padding-bottom: 2vw;
     justify-content: space-evenly;
@@ -64,11 +63,49 @@ div.login div{
 div.login div button{
     border: none;
     background: none;
-    color: gray;
+    color: white;
+    padding: 0.5vw 3vw;
+    border: 1px solid white;
+    border-radius: 30px;
     font-size: 1.5em;
     font-weight: 700;
 }
 div.login div button a{
     text-decoration: none;
-    color: gray;
+    color: white;
+}
+div.login p{
+    font-size: 1.5em;
+    padding: 3vw 0 0 0;
+}
+html{
+    background: var(--bg);   
+}
+main{
+    padding: 3vw 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    color: white;
+    height: 80vh;
+}
+main h1{
+    padding: 1vw 0 4vw 0;
+}
+main h2{
+    padding-bottom: 2vw;
+}
+main p{
+    font-size: 1.3em;
+    padding: 1vw 0;
+}
+main a{
+    margin-top: 3vw;
+    color: white;
+    text-decoration: none;
+    padding: 0.5vw 2vw;
+    border: 1px solid white;
+    border-radius: 20px;
+    font-size: 1.5em;
 }
