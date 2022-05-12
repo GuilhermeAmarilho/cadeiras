@@ -15,8 +15,10 @@
                 <button type="submit" id="logButton">Log in!</button>
                 <button id="cadastroButton"><a href="../controller/cadastro.php">Cadastre-se!</a></button>
             </div>
-            <label for="salvar">Manter logado</label>
-            <input type="checkbox" name="salvar" id="salvar">
+            <div>
+                <label for="salvar">Manter logado</label>
+                <input type="checkbox" name="salvar" id="salvar">
+            </div>
         </div>
     </form> 
     <script src="../assets/js/script.js"></script>
