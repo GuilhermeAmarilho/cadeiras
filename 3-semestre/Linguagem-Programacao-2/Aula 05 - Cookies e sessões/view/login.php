@@ -1,18 +1,12 @@
 <?php 
-    session_start();
-    if(!isset($_COOKIE['time'])){
-        unset($_SESSION['login"']);
-        unset($_COOKIE["nome"]);
-    }else{
-        if(isset($_SESSION["login"])){
-            header("Location: /controller/login.php");  // Caso exista sessão, manda para o tratamento de login no controller
-            echo "nao tem login";
-        }
+    require('controller/controlador.php');
+    $aux = controleDeSessao();
+    if($aux == 1){ // Caso tenha sessão ativa, volta para o main
+        header("Location: /view/main.php");
     }
     require('index.html');
 ?>
     <div class="login">
-
         <form action="/controller/login.php" method="post">
             <h1>LOGIN</h1>
             <input type="text" name="login" id="login" placeholder="Username" required>
@@ -25,6 +19,9 @@
                 if(isset($_COOKIE["log"])){
                     if($_COOKIE["log"] == 0){
                         echo "<p>Login ou senha inválidos<p>";
+                    }
+                    if($_COOKIE["log"] == 3){
+                        echo "<p>Sessão expirada<p>";
                     }
                 };
             ?>

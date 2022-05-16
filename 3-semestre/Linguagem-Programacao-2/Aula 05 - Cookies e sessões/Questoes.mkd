@@ -1,0 +1,18 @@
+# Atividade referente a Cookies e Sessões
+
+## O que são cookies e suas características
+
+#### ` São dados de sites salvos no computador do usuário, como nome do usuário, email, coisas usuais para personalizar e melhorar a experiência no site. Alem de facilitar a transferência de dados de uma página para a outra.`
+
+
+## Por quê e quanto utilizar cookies
+
+#### ` Esta tecnologia começou a ser empregada nos anos 90 para atender a demanda de lojas online, onde o cliente pode sair do site, que ainda assim suas possiveis compras se mantem armazenadas no carrinho.`
+
+## O que são sessões e suas características
+
+`Sessões são uma forma simples de armazenar dados para usuários individuais usando um ID de sessão único. Sessões podem ser usadas para persistir informações entre requisições de páginas. Sessões normalmente se encerram automaticamente quando o PHP termina de executar um script, mas podem ser encerradas manualmente.`
+
+## Por quê e quanto utilizar sessões
+
+` As sessões foram criadas para sanar uma funcionalidade imprescindível, que é a autenticação de usuário, onde essa autenticação garante que cada usuário de nosso sistema só acesse aquilo que lhe é permitido e nada mais, também possibilitando que possamos saber tudo o que foi feito pelo usuário logado dentro de nosso sistema.`

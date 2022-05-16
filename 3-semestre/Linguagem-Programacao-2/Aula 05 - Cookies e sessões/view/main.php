@@ -1,12 +1,11 @@
 <?php
-    session_start();
-    if(!isset($_COOKIE['time'])){
-        unset($_SESSION['login"']);
-        unset($_COOKIE["nome"]);
-        header("Location: /view/login.php");
-        exit;
+    require('controller/controlador.php');
+    $aux = controleDeSessao();
+    if($aux != 1){ // Caso N Ã O tenha sessão ativa, volta para o main
+        header("Location: /view/login.php");        
+        setcookie("log",3,time() + 60, "/"); 
     }
-    require('index.html');
+    require("index.html");
     ?>
     <main>
         <h1> Bem vindo  

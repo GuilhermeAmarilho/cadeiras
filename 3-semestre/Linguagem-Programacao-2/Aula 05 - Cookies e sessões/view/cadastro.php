@@ -1,5 +1,10 @@
 <?php
-    require('index.html');
+    require('controller/controlador.php');
+    $aux = controleDeSessao();
+    if($aux == 1){ // Caso tenha sessão ativa, volta para o main
+        header("Location: /view/main.php");
+    }
+    require("index.html");
 ?>
     <div class="login">
         <form action="/controller/cadastro.php" method="post">
