@@ -1,0 +1,148 @@
+:root{
+    --bg: linear-gradient(90deg, hsl(22, 89%, 29%) 0%, hsl(313, 88%, 20%) 100%);
+    --bg-items: linear-gradient(90deg, hsl(22, 87%, 41%) 0%, hsl(313, 83%, 34%) 100%);
+}
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+*{
+    font-family: 'Righteous', cursive;
+    margin: 0;
+    padding: 0;
+}
+html{
+    background: var(--bg);   
+}
+/* Header */
+header{
+    display: flex;
+    justify-content: space-between;
+    height: 12vh;
+    background: var(--bg-items);
+    align-items: center;
+}
+header div{
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: 1.6em;
+    letter-spacing: 1px;
+    width: 30%;
+}
+header div img{
+    width: 2em;
+    padding: 0vw 1vw 0 5vw;
+}
+header nav{
+    width: 70%;
+}
+header nav ul{
+    display: flex;
+    justify-content: space-evenly;
+}
+header nav ul li{
+    list-style: none;
+}
+header nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.4em;
+}
+@media screen  and (max-width: 900px ){
+    header nav ul li a{
+        font-size: 0.9em;
+    }
+}
+@media screen  and (max-width: 1100px ){
+    header nav ul li a{
+        font-size: 1.1em;
+    }
+    header div{
+        font-size: 1.1em;
+    }
+}
+/* End Header */
+/* Footer */
+footer{
+    color: white;
+    bottom: 0;
+    background: var(--bg-items);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1rem;
+}
+footer div.socialMedias{
+    display: flex;
+}
+footer div.socialMedias img{
+    width: 2.5vw;
+    padding: 0.5vw 1vw;
+}
+footer div.informations{
+    display: flex;
+    width: 20%;
+    justify-content: space-around;
+}
+footer p{
+    padding-bottom: .5vw;
+}
+/* End Footer */
+main{
+    width: 70%;
+    margin: 2vw 15% 6vw 15%;
+}
+main p.title{
+    font-size: 2em;
+    color: white;
+    text-align: center;
+    margin-bottom: 3vw;
+}
+main div.products{
+    display: flex;
+    justify-content: space-around;
+}
+main div.products div.product h1{
+    font-size: 1em;
+}
+main div.products div.product{
+    text-align: center;
+    color: white;
+}
+main div.products div.product h1{
+    font-size: 1em;
+}
+main div.products div.product p{
+    font-size: 1.3em;
+    margin-bottom: 1.5vw;
+}
+main div.products div.product a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.3em;
+    background: var(--bg-items);
+    border: 1px solid white;
+    border-radius: 20px;
+    padding: 0.3vw 1vw;
+}
+main div.product img{
+    width: 15vw;
+}
+
+div.container{
+    width: 80%;
+    margin: 0 10%;
+    display: flex;
+    justify-content: center;
+}
+table{
+    text-align: center;
+    color: white;
+    font-size: 1.4em;
+    letter-spacing: 1px;
+}
+th{
+    padding: 4vw 3vw;
+    font-weight: 900;
+}
+td{
+    padding-bottom: 2vw;
+}

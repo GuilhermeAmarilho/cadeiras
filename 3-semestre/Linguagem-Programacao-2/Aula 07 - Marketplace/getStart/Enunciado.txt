@@ -1,0 +1,19 @@
+Lista de Exercícios
+Descrição:
+ - Pode ser em dupla;
+ - Pode utilizar qualquer linguagem de programação;
+ - Utilize cookies e sessão. Se preferir, pode utilizar sessionStorage e localStorage também;
+
+1) Crie um sistema simples de vendas que tenha produtos organizados por categorias (não é necessário efetuar as compras, basta mostrar alguns itens de cada categoria). Os produtos serão armazenados na sessão. Não precisa ter um formulário de cadastro, apenas uma lista fixa de produtos na sessão.
+
+A página inicial do site deve conter no mínimo três produtos que serão mostrados aleatoriamente e cada produto precisa ter pelo menos nome, categoria e uma foto. Crie cookies (1 dia de vida) para monitorar a navegação dentro do site, ou seja, os cookies devem controlar a quantidade de acessos que cada página teve, a data e o horário do último acesso de cada página. Com base nessas informações, no topo da página deve aparecer uma mensagem com a oferta de um produto pertencente à categoria mais visitada pelo usuário. Não é necessário criar banco de dados para esse exercício.
+
+Crie também uma página de relatório para mostrar as informações desses cookies criando um relatório da seguinte forma:
+
+Total de Cliques Eletrodomésticos Eletrônicos Calçados Vestuário
+
+40 10 10 10 10
+
+100% 25% 25% 25% 25%
+
+Último Acesso 28/04/2022 15h10min 28/04/2022 15h08min 28/04/2022 15h05min 28/04/2022 15h30min

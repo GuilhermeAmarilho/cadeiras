@@ -1,0 +1,16 @@
+//para baixar as implementações que o outro fez
+
+git pull
+
+//para mandar implementações que tu fez
+
+git add .
+git commit -m "mensagem q tu quer mandar"
+git push
+
+//para baixar no teu pc 
+git clone https://github.com/GuilhermeAmarilho/Projeto2-LP
+
+//sempre que for editar, primeiro de o comando
+
+/executavel.bat
