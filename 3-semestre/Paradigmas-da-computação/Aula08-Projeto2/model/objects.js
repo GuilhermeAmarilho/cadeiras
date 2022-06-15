@@ -148,7 +148,7 @@ bocha.push(
             defineLeft(this.object,this.left);
         },
     }
-);
+); // Bocha 1
 bocha.push(
     {
         top: 0,
@@ -169,7 +169,7 @@ bocha.push(
             defineLeft(this.object,this.left);
         }, 
     }
-);
+); // Bocha 2
 bocha.push(
     {
         top: 0,
@@ -190,7 +190,7 @@ bocha.push(
             defineLeft(this.object,this.left);
         },
     }
-);
+); // Bocha 3
 bocha.push(
     {
         top: 0,
@@ -211,7 +211,7 @@ bocha.push(
             defineLeft(this.object,this.left);
         },
     }
-);
+); // Bocha 4
 bocha.push(
     {
         top: 0,
@@ -232,7 +232,7 @@ bocha.push(
             defineLeft(this.object,this.left);
         },
     }
-);
+); // Bocha 5
 bocha.push(
     {
         top: 0,
@@ -253,4 +253,4 @@ bocha.push(
             defineLeft(this.object,this.left);
         },
     }
-);
+); // Bocha 6
