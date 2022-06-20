@@ -10,9 +10,7 @@ body{
     background: linear-gradient(90deg, hsl(204, 64%, 60%) 0%, hsl(55, 66%, 69%) 100%);
 }
 
-
 /* Cabeçalho */
-
 header{
     height: 8vh;
     display: flex;
@@ -52,71 +50,26 @@ header nav ul li a{
     color: white;
     font-size: 1.2em;
 }
-
-
-/* Players */
-.pessoas{
-    position: absolute;
-    width: 5vw;
-    height: 0;
-}
-.pessoas img{
-    position: absolute;
-    width: 5vw;
-    /* display: block; */
-}
-
-
-/* Game */
-
-h1.title{
+main{
+    width: 70vw;
+    margin: 3vw 15%;
     text-align: center;
-    padding: 1vw 0;
+}
+main>h1{
+    font-weight: 800;
+    font-size: 2.5em;
+}
+main>h2{
+    font-weight: 800;
     font-size: 2em;
-    font-weight: 900;
 }
-.quadra{
-    background: url('../img/quadra.png');
-    background-size: cover;
-    background-repeat: round;
-    position: relative;
-    margin-left: 10vw;
-    width: 80vw;
-    height: 60vh;
-    min-height: 400px;
+main>h3{
+    font-size: 1.7em;
+    font-weight: 700;
+    padding: 1vw 0vw 2vw 0;
 }
-.bolin{
-    position: absolute;
-    width: 1vw;
-    height: 1vw;
-    border-radius: 50%;
-    background: rgb(255, 255, 255);
-    transition: 1s;
-}
-div.quadra div.arco{
-    background: url("../img/arco.png") center;
-    background-size: contain;
-    background-repeat: no-repeat;
-    width: 4vw;
-    height: 16vh;
-    /* visibility: hidden;   */
-    position: absolute;
-}
-div.quadra div.arcolinha{
-    width: 5vw;
-    position: absolute;
-    height: 15vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transform: rotate(0deg);
-    /* visibility: hidden;   */
-}
-div.quadra div.arcolinha hr{
-    position: absolute;
-    height: .2vh;
-    width: 4vw;
-    background: red;
-    border: none;
-    transition: 1s;
+main>p{
+    padding: 2vw;
+    font-size: 1.5em;
+    text-align: justify;
 }
