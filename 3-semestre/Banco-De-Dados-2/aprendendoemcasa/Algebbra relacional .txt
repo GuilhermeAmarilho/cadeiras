@@ -1,1 +1,0 @@
-processamento e otimizaçção de consultas
