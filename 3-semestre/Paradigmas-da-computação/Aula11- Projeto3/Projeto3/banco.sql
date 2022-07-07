@@ -4,10 +4,12 @@ CREATE TABLE valores(
     id serial primary key,
     a float,
     b float,
-    c float
+    c float,
+    x float,
+    y float
 );
 
-INSERT INTO valores VALUES (0,0,0,0);
+INSERT INTO valores VALUES (0,0,0,0,0,0);
 
 SELECT * FROM valores;
 

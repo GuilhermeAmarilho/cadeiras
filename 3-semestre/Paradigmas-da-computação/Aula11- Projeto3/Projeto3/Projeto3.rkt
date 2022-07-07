@@ -56,12 +56,12 @@
                          (~a "\nA "  (string->number (send a get-value))
                          "\nB "      (string->number (send b get-value))
                          "\nC "      (string->number (send c get-value))
-                         "\neixo X "(eixox (string->number (send a get-value)) (string->number (send b get-value)))
+                         "\neixo X " (eixox (string->number (send a get-value)) (string->number (send b get-value)))
                          "\neixo Y " (eixoy (string->number (send a get-value)) (string->number (send b get-value)) (string->number (send c get-value)))
                          "\nX1 "     (raiz1 (string->number (send a get-value)) (string->number (send b get-value)) (string->number (send c get-value)))
                          "\nX2 "     (raiz2 (string->number (send a get-value)) (string->number (send b get-value)) (string->number (send c get-value)))))
                          ;insere no banco
-                         (query-exec pgc "insert into valores (a,b,c) values ($1, $2, $3)" (string->number (send a get-value)) (string->number (send b get-value)) (string->number (send c get-value)) )
+                         (query-exec pgc "insert into valores (a,b,c,x,y) values ($1, $2, $3, $4, $5)" (string->number (send a get-value)) (string->number (send b get-value)) (string->number (send c get-value)) (eixox (string->number (send a get-value)) (string->number (send b get-value))) (eixoy (string->number (send a get-value)) (string->number (send b get-value)) (string->number (send c get-value))))
                          ;Cria um label para a variavel
                          (define msg (new message% [parent frame][label "Cálculo realizado!"]))
                          (define Xv (new text-field% [label "X vértice: "]      [init-value ""] [parent frame] [vert-margin 10] [horiz-margin 200]))
