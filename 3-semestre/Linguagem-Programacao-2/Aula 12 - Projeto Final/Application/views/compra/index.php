@@ -31,6 +31,6 @@
     ?>
                 <p class="saldoInsuficiente">Saldo insuficiente!</p>
     <?php   }
-        } 
+        }
     ?>
 </main>

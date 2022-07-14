@@ -5,12 +5,22 @@ namespace Application\models;
 use Application\core\Database;
 use PDO;
 class Compras{
-  public static function inserir($idproduto, $idusuario){
+  public static function inserir($data, $idusuario){
     $conn = new Database();
-    $result = $conn->executeQuery('INSERT INTO compra (usuario, produto) VALUES (:USUARIO, :PRODUTO)', array(
-      ':USUARIO' => $idusuario, 
-      ':PRODUTO' => $idproduto
-    ));
+    try{
+      $conn->begin();
+      foreach($data as $product){
+        $result = $conn->executeQuery('INSERT INTO compra (usuario, produto) VALUES (:USUARIO, :PRODUTO)', array(
+          ':USUARIO' => $idusuario, 
+          ':PRODUTO' => $product['id']
+        ));
+      }
+      $conn->commit();
+      return 1;
+    }catch (\PDOException $e) {
+      $conn->rollback();
+      return 0;
+    }
   }
   public static function history($idusuario){
     $conn = new Database();

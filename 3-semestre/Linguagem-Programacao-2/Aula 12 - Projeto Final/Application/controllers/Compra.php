@@ -5,6 +5,11 @@ class Compra extends Controller{
     public function index(){
         if (empty($_SESSION['cart'])) {
             $_SESSION['cart'] = [];
+            if(isset($_COOKIE['erro'])){
+                if($_COOKIE['erro']==4){
+                    $this->view('compra/index');
+                }
+            }
             $this->view('erro404');
         }else{
             $total = 0;
@@ -48,12 +53,14 @@ class Compra extends Controller{
             $total+= doubleval($product['preco']);
         }
         if($saldo >= $total){
-            $Users::alterarSaldo( ($saldo - $total), $_SESSION['id']);
-            foreach ($_SESSION['cart'] as $product){
-                $Compras::inserir($product['id'], $_SESSION['id']);
-            }
-            $_SESSION['cart'] = [];
-            header("Location: /compra/history");
+            $validacao = $Compras::inserir($_SESSION['cart'], $_SESSION['id']);
+            print_r($validacao);
+            if($validacao==0){ // Problemas ao inserir
+                $_SESSION['cart'] = [];
+                $this->view("erro404");
+            }else // Deu certo
+                $Users::alterarSaldo( ($saldo - $total), $_SESSION['id']);
+                header("Location: /compra/history");
         }else{
             setcookie('erro', 3, time()+30, '/');
             header("Location: /compra/index");

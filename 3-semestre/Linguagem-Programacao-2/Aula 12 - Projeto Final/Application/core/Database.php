@@ -28,4 +28,13 @@ class Database extends PDO{
     $stmt->execute();
     return $stmt;
   }
+  public function begin() {
+    return $this->conn->beginTransaction();
+  }
+  public function commit() : bool {
+    return $this->conn->commit();
+  }
+  public function rollback() : bool {
+    return $this->conn->rollback();
+  }
 }
